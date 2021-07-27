@@ -10,7 +10,7 @@ const saveToDos = () => {
 }
 
 const deleteTodo = (event) => {
-  const li = event.target.parentElement
+  const li = event.target.closest('li')
   li.remove()
   toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id))
   saveToDos()
@@ -21,11 +21,13 @@ const paintToDo = (newTodoObj) => {
   li.id = newTodoObj.id
   const span = document.createElement('span')
   span.innerText = newTodoObj.text
+  const icon = document.createElement('i')
+  icon.className = 'fas fa-check'
   const button = document.createElement('button')
-  button.innerText = '❌'
+  button.appendChild(icon)
   button.addEventListener('click', deleteTodo)
-  li.appendChild(span)
   li.appendChild(button)
+  li.appendChild(span)
   toDoList.appendChild(li)
 }
 
