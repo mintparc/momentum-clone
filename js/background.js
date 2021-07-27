@@ -5,6 +5,7 @@ const images = [
   'img04.jpg',
   'img05.jpg',
   'img06.jpg',
+  'img07.jpg'
 ]
 
 const chosenImage = images[Math.floor(Math.random() * images.length)]
