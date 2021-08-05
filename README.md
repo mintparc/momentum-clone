@@ -11,6 +11,8 @@ Only Use HTML, CSS and Vanilla JS 🍦
 ## Web
 https://mintparc.github.io/momentum-clone/
 <br/><br/>
+![momentom](https://user-images.githubusercontent.com/53563513/128273626-a4a170e6-b624-427f-a3e0-7ed47f61c491.gif)
+<br/><br/>
 
 ## Git Commit Rule
 `Use Gitmoji`
